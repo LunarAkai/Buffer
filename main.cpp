@@ -15,8 +15,6 @@ int main() {
 
     allocateMemory();
     while(true) {
-        
-        
         char c;
         scanf("%c", &c);
         switch (c) 
@@ -40,8 +38,7 @@ int main() {
             case 'q': {
                 freeMemory();
                 exit(0);
-            }
-                    
+            } 
         }
     }
     return 0;

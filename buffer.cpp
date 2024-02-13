@@ -37,19 +37,16 @@ void push(int _value) {
     if(isFull()) {
         printf("Stack Overflow\n");
     } else {
-        ++g_top;
-        g_buffer[g_top].value = _value;
+        g_buffer[++g_top].value = _value;
     }
 }
 
-void pop() {
+int pop() {
     if(isEmpty()) {
         printf("Stack is Empty\n");
+        return -1;
     } else {
-        for(int i = g_top+1; i < g_top; i++) {
-            g_buffer[i-1] = g_buffer[i];
-        }
-        g_top--;
+        return g_buffer[g_top--].value;
     }
 }
 

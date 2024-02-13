@@ -11,7 +11,7 @@ bool isEmpty();
 bool isFull();
 
 void push(int _value);
-void pop();
+int pop();
 
 void printBufferValues();
 
