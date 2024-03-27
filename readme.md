@@ -1,2 +1,2 @@
 Simple Buffer/Stack Simulation i guess.
-As excercise for university.
+As exercise for university.
